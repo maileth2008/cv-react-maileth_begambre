@@ -1,7 +1,8 @@
-function Educacion() {
+import React from 'react';
+function educacion() {
   return (
     <section>
-      <h2>Educación</h2>
+      <h2>educación</h2>
 
       <p>Tecnólogo en Análisis y Desarrollo de Software - SENA (En curso)</p>
       <p>Bachiller Técnico - I.E Técnico Agropecuario Claret (2024)</p>
@@ -11,4 +12,4 @@ function Educacion() {
   );
 }
 
-export default Educacion;
+export default educacion;

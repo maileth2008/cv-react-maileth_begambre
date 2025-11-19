@@ -1,3 +1,5 @@
+import React from 'react';
+
 function Experiencia() {
   const experiencias = [
     {
@@ -24,10 +26,21 @@ function Experiencia() {
       año: "2025",
       descripcion: "Creación de sitios web con HTML y CSS.",
     },
-  
   ];
 
-  
+  return (
+    <section>
+      <h2>Experiencia</h2>
+      {experiencias.map((exp, index) => (
+        <div key={index}>
+          <h3>{exp.cargo}</h3>
+          <p>{exp.empresa} - {exp.año}</p>
+          <p>{exp.descripcion}</p>
+          <hr />
+        </div>
+      ))}
+    </section>
+  );
 }
 
 export default Experiencia;
