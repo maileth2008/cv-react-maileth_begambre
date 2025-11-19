@@ -1,15 +1,43 @@
 import React from 'react';
-function educacion() {
+
+function Educacion() {
+
+  const cursos = [
+    {
+      titulo: "Tecnólogo en Análisis y Desarrollo de Software",
+      institucion: "SENA",
+      año: "En curso"
+    },
+    {
+      titulo: "Bachiller Técnico",
+      institucion: "I.E Técnico Agropecuario Claret",
+      año: "2024"
+    },
+    {
+      titulo: "Fundamentos de Programación",
+      institucion: "SENA",
+      año: "2025"
+    },
+    {
+      titulo: "Inglés Básico",
+      institucion: "SENA",
+      año: "2025"
+    }
+  ];
+
   return (
     <section>
-      <h2>educación</h2>
+      <h2>Educación</h2>
 
-      <p>Tecnólogo en Análisis y Desarrollo de Software - SENA (En curso)</p>
-      <p>Bachiller Técnico - I.E Técnico Agropecuario Claret (2024)</p>
-      <p>Curso: Fundamentos de Programación  -SENA 2025</p>
-      <p>Curso: ingles basico -sena 2025</p>
+      {cursos.map((curso, index) => (
+        <div key={index}>
+          <p>
+            <strong>{curso.titulo}</strong> — {curso.institucion} ({curso.año})
+          </p>
+        </div>
+      ))}
     </section>
   );
 }
 
-export default educacion;
+export default Educacion;
