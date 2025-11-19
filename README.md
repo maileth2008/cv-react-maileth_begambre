@@ -29,11 +29,11 @@ Cómo ejecutar el proyecto
 
 1 Clonar el repositorio: 
 
-git clone https://github.com/maileth2008/proyecto.maileth_read-vite.git) 
+git clone https: //github.com/maileth2008/cv-react-maileth_begambre.git)
 
 2 Entrar al proyecto: 
 
-cd vite-project 
+cd maileth_begambre
 
 3 Instalar dependencias: 
 
