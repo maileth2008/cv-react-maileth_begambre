@@ -9,6 +9,10 @@ Desarrollado por:
 Maileth Begambre — Aprendiz SENA Proyecto: GA1-220501096-03-AA1-EV05 
 
 Vista previa 
+
+
+
+
 <img width="910" height="618" alt="image" src="https://github.com/user-attachments/assets/560dd4ec-bc6c-4730-88cc-0eb169ba4b74" />
 <img width="910" height="618" alt="image" src="https://github.com/user-attachments/assets/ad4ef257-1f76-41d5-8bb6-36e3d8c9dd86" />
 <img width="910" height="618" alt="image" src="https://github.com/user-attachments/assets/83b1e07d-39d5-4cdb-8f4b-4c91215aa6e6" />
