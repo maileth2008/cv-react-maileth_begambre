@@ -1,4 +1,4 @@
-proyecto.maileth_read-vite 
+nombre del proyecto: cv-react-maileth_begambre
 
 Hoja de Vida en React 
 
@@ -27,7 +27,16 @@ JSX
 
 CSS 
 
-Estructura de Componentes src/ ├── components/ │ ├── CabeceraCV.jsx │ ├── Perfil.jsx │ ├── Experiencia.jsx │ └── Educacion.jsx ├── App.jsx ├── main.jsx └── index.css 
+Estructura de Componentes
+ src/ 
+├── components/ 
+│ ├── CabeceraCV.jsx 
+│ ├── Perfil.jsx 
+│ ├── Experiencia.jsx 
+│ └── Educacion.jsx 
+├── App.jsx 
+├── main.jsx 
+└── index.css 
 
 Cómo ejecutar el proyecto 
 
@@ -39,15 +48,34 @@ git clone https: //github.com/maileth2008/cv-react-maileth_begambre.git)
 
 cd maileth_begambre
 
-3 Instalar dependencias: 
+3. Instalar dependencias:
 
-npm install 
+npm install
 
-4 Ejecutarlo: 
+
+(Antes de instalar npm, verifiquemos si ya está instalado con el comando:)
+
+npm -v
+
+
+Debe aparecer algo como: v18.17.0. Si ya está instalado, nos saltamos al paso 4.
+
+4 Ejecutar: 
 
 npm run dev 
 
-Commits incluidos: 
+(para abrir el navegador)
 
-feat: componente CabeceraCV feat: componente Perfil feat: componente Experiencia feat: componente Educacion style: ajustes finales y estilo css 
+Commits mas importantes : 
 
+feat: componente CabeceraCV 
+feat: componente Perfil 
+feat: componente Experiencia
+feat: componente Educacion 
+style: ajustes finales y estilo css 
+
+Actualización: Actividad 6 — Componentes Dinámicos
+vista previa
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)

@@ -1,16 +1,18 @@
-import CabeceraCV from "./componente/CabeceraCV";
-import Perfil from "./componente/Perfil";
-import Experiencia from "./componente/experiencia";
-import Educacion from "./componente/educacion";
-import "./App.css";
+import React from "react";
+import CabeceraCV from "./componente/CabeceraCV.jsx";
+import Perfil from "./componente/Perfil.jsx";
+import Educacion from "./componente/educacion.jsx";
+import Experiencia from "./componente/experiencia.jsx";
+import StackTecnologias from "./componente/StackTecnologias.jsx";
 
 function App() {
   return (
-    <div className="cv-container">
+    <div style={{ padding: "20px", fontFamily: "Arial" }}>
       <CabeceraCV />
       <Perfil />
-      <Experiencia />
       <Educacion />
+      <Experiencia />
+      <StackTecnologias />
     </div>
   );
 }
