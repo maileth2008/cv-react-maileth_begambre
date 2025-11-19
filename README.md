@@ -75,7 +75,47 @@ feat: componente Educacion
 style: ajustes finales y estilo css 
 
 Actualización: Actividad 6 — Componentes Dinámicos
+
+Breve descripción del ejercicio
+
+Este proyecto es una Hoja de Vida construida con React + Vite, usando componentes funcionales y renderización dinámica.
+Hace parte de la actividad GA1-220501096-03-AA1-EV05 del SENA.
+
+El objetivo es modularizar la información de un CV utilizando componentes reutilizables, listas dinámicas y estilos básicos.
+
+como ejecutar el proyecto
+
+(como este es la continuacio de la actividad anterior este proyecto se ejecuta de la misma manera )
+
+
+1  Clonar el repositorio
+git clone https://github.com/maileth2008/cv-react-maileth_begambre.git
+
+2 Entrar a la carpeta del proyecto
+cd cv-react-maileth_begambre
+
+3 Instalar dependencias
+npm install
+
+
+(Si quieres verificar si npm está instalado, usa:)
+
+npm -v
+
+4 Ejecutar el servidor
+npm run dev
+
+
+Luego abre el navegador en la URL que aparece en la termina
+
+
 vista previa
 ![alt text](image.png)
 ![alt text](image-1.png)
 ![alt text](image-2.png)
+
+commit nuevos:
+1 componente experiencia con 10 cargos distintos
+2 componente educacion dinamico con formacion complementaria 
+3 componente StackTecnolgias dinamico y con renderizado condicicional
+4  Actualización: Actividad 6 — Componentes Dinámicos
