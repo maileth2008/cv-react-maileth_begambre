@@ -1,6 +1,5 @@
 import React from 'react';
 function CabeceraCV({ nombre, cargo, ciudad, contacto }) { 
-
   return (
     <header>
       <h1>{nombre}</h1>
@@ -12,4 +11,3 @@ function CabeceraCV({ nombre, cargo, ciudad, contacto }) {
   );
 }
 
-export default CabeceraCV;
