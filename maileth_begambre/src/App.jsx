@@ -44,9 +44,9 @@ export default function App() {
 
       <Perfil descripcion={perfilTexto} />
 
-      <Educacion cursos={cursos} />
+      <educacion cursos={cursos} />
 
-      <Experiencia experiencias={experiencias} />
+      <experiencia experiencias={experiencias} />
 
       <StackTecnologias tecnologias={tecnologias} />
     </div>
