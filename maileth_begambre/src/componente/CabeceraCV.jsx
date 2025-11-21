@@ -1,5 +1,6 @@
 import React from 'react';
-function CabeceraCV({ nombre, cargo, ciudad, contacto }) {
+function CabeceraCV({ nombre, cargo, ciudad, contacto }) { 
+
   return (
     <header>
       <h1>{nombre}</h1>
