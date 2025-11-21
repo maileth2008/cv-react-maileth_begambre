@@ -1,12 +1,12 @@
 import React from 'react';
-function Perfil() {
+function PerfilCV({ descripcion }) {
   return (
     <section>
-      <h2>Perfil</h2>
-      <p>Soy aprendiz del SENA, con interés en el desarrollo web moderno utilizando React.</p>
-      <p>Responsable, creativa y con habilidades de trabajo en equipo.</p>
+      <h2>Perfil Profesional</h2>
+      <p>{descripcion}</p>
+      <hr />
     </section>
   );
 }
 
-export default Perfil;
+export default PerfilCV;
