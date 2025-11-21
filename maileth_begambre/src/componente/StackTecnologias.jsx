@@ -1,9 +1,8 @@
 import React from "react";
 
 export default function StackTecnologias({ tecnologias }) {
-
-  // Renderizado condicional: si no hay tecnologías
-  if (tecnologias.length === 0) {
+  // Renderizado condicional
+  if (!tecnologias || tecnologias.length === 0) {
     return (
       <section>
         <h3>Stack de Tecnologías</h3>
@@ -12,19 +11,19 @@ export default function StackTecnologias({ tecnologias }) {
     );
   }
 
-  // Asigna color según el tipo
-  const obtenerColor = (tipo) => {
+  // Función para asignar la clase según el tipo
+  const obtenerClase = (tipo) => {
     switch (tipo) {
       case "frontend":
-        return "blue";
+        return "stack-item stack-frontend";
       case "backend":
-        return "green";
+        return "stack-item stack-backend";
       case "base de datos":
-        return "orange";
+        return "stack-item stack-base";
       case "otros":
-        return "purple";
+        return "stack-item stack-otro";
       default:
-        return "gray";
+        return "stack-item";
     }
   };
 
@@ -34,10 +33,7 @@ export default function StackTecnologias({ tecnologias }) {
 
       <ul>
         {tecnologias.map((tech) => (
-          <li
-            key={tech.id}
-            style={{ color: obtenerColor(tech.tipo), fontWeight: "bold" }}
-          >
+          <li key={tech.id} className={obtenerClase(tech.tipo)}>
             {tech.nombre} — <em>{tech.tipo}</em>
           </li>
         ))}

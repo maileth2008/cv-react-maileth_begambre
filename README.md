@@ -119,3 +119,70 @@ commit nuevos:
 2 componente educacion dinamico con formacion complementaria 
 3 componente StackTecnolgias dinamico y con renderizado condicicional
 4  Actualización: Actividad 6 — Componentes Dinámicos
+
+
+actualización del README con explicación del uso de props
+
+
+Uso de Props en el Proyecto CV React
+
+En este proyecto se utilizan props para enviar información desde el componente principal (App.jsx) hacia los componentes hijos que construyen cada sección del CV.
+Las props permiten reutilizar componentes, organizar el código y separar la lógica de los datos.
+
+ ¿Qué son las props?
+
+Las props (propiedades) son valores que un componente padre envía a un componente hijo.
+Son solo lectura y permiten que el mismo componente funcione con diferentes datos.
+
+ ¿Cómo se enviaron props en este proyecto?
+
+Ejemplo desde App.jsx:
+
+<CabeceraCV {...datosPersonales} />
+<Perfil descripcion={perfilTexto} />
+<Educacion cursos={cursos} />
+<Experiencia experiencias={experiencias} />
+<StackTecnologias tecnologias={tecnologias} />
+
+
+Aquí se envían los datos del CV a cada componente mediante props.
+ ¿Cómo se reciben las props en los componentes?
+
+Dentro de cada componente se usó desestructuración, así:
+
+CabeceraCV.jsx
+function CabeceraCV({ nombre1, nombre2, cargo, ciudad, contacto }) {
+
+Perfil.jsx
+function Perfil({ descripcion }) {
+
+Educación.jsx
+function Educacion({ cursos }) {
+
+Experiencia.jsx
+function Experiencia({ experiencias }) {
+
+StackTecnologias.jsx
+function StackTecnologias({ tecnologias }) {
+
+
+Cada uno recibe la prop enviada desde App.jsx y la usa para renderizar información.
+
+¿Para qué sirven las props en este proyecto?
+ Separan la información del diseño
+ Permiten que cada componente sea independiente
+ Dan organización al código
+Facilitan trabajar con listas dinámicas (como cursos, experiencias o tecnologías)
+
+
+
+
+nuevos commits
+extraccion de datos personales y contenido dinamico hacia app.jsx
+componente caveceraCV ahora recive props desde app.jsx
+desestructuracion aplicada en caveceraCV
+perfil dinamico con props
+experiencia mapeada desde arreglo en app.js
+componente educacion con props y destructuracion 
+estacktecnologia ahora recive props desde app.js
+actualización del README con explicación del uso de props

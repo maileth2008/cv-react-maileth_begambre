@@ -9,7 +9,8 @@ export default function App() {
 
   // DATOS DEL CV 
   const datosPersonales = {
-    nombre: "Maileth Begambre",
+    nombre1: "Maileth",
+    nombre2: "Begambre",
     cargo: "Desarrollador en formación",
     ciudad: "Medellin, Colombia",
     contacto: "mailethbegambre615@gmail.com"

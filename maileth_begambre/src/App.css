@@ -1,125 +1,122 @@
-/* --- CONTENEDOR GENERAL DEL CV --- */
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* FONDO GENERAL */
+body {
+  background: #f5f1e6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* HOJA DEL CV */
 .cv-container {
-  max-width: 850px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 900px;
   background: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 0 25px rgba(100, 108, 255, 0.3);
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
+  padding: 50px;
+  border-radius: 12px;
+  border: 1px solid #d1c9c0;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
 }
 
-/* --- CABECERA --- */
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.2rem;
+/* CABECERA */
+header {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-header h2 {
-  font-size: 1.2rem;
-  font-weight: normal;
-  color: #646cff;
-}
-
-/* --- COLORES DEL NOMBRE --- */
-.rosa {
-  color: #ff66c4;
+/* NOMBRE */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .negro {
   color: #000;
 }
 
-/* --- INFO DE CONTACTO --- */
+.rosa {
+  color: #f38cb8;
+}
+
+/* INFO DEL HEADER */
+header h2 {
+  font-size: 18px;
+  color: #777;
+}
+
 header p {
-  margin: 5px 0;
-  font-size: 1rem;
+  font-size: 14px;
+  color: #555;
 }
 
-/* --- SECCIONES GENERALES --- */
+/* SECCIONES */
 section {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background: #f8f8ff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(100, 108, 255, 0.1);
+  margin-bottom: 30px;
 }
 
-/* --- TÍTULOS DE SECCIÓN --- */
+/* TÍTULOS */
 section h2,
 section h3 {
-  color: #646cff;
-  font-size: 1.5rem;
-  border-bottom: 2px solid #646cffaa;
-  padding-bottom: 0.3rem;
-  margin-bottom: 1rem;
+  font-size: 22px;
+  margin-bottom: 10px;
+  border-left: 5px solid #f38cb8;
+  padding-left: 8px;
+  color: #333;
 }
 
-/* --- LISTAS DINÁMICAS --- */
+/* TEXTO */
+section p,
+section li {
+  font-size: 15px;
+  color: #444;
+  margin-top: 5px;
+}
+
+/* LISTAS */
 ul {
   list-style: none;
   padding-left: 0;
 }
 
-ul li {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-}
-
-/* --- EXPERIENCIA PROFESIONAL --- */
-.experiencia-item {
-  margin-bottom: 1rem;
-  padding: 0.8rem;
-  background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(100, 108, 255, 0.15);
-}
-
-.experiencia-item strong {
-  color: #1a1a1a;
-}
-
-/* --- STACK DE TECNOLOGÍAS (COLORES POR TIPO) --- */
-.stack-item {
-  font-weight: bold;
-  padding: 8px;
-  border-radius: 6px;
+/* EXPERIENCIA Y EDUCACIÓN ITEMS */
+li {
   margin-bottom: 8px;
-  width: fit-content;
 }
 
+/* STACK DE TECNOLOGÍAS – ESTILOS */
+.stack-item {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  width: fit-content;
+  margin-bottom: 8px;
+}
+
+/* Colores según tipo */
 .stack-frontend {
-  color: white;
   background: #4b6fff;
+  color: white;
 }
 
 .stack-backend {
-  color: white;
   background: #2ecc71;
+  color: white;
 }
 
 .stack-base {
-  color: white;
   background: #ff8c42;
+  color: white;
 }
 
 .stack-otro {
   background: #b8b8b8;
   color: black;
-}
-
-/* --- RESPONSIVE --- */
-@media (max-width: 600px) {
-  .cv-container {
-    padding: 1rem;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-
-  section {
-    padding: 1rem;
-  }
 }
