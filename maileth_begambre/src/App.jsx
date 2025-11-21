@@ -9,10 +9,10 @@ export default function App() {
 
   // DATOS DEL CV 
   const datosPersonales = {
-    nombre: "Jesús Begambre",
+    nombre: "Maileth Begambre",
     cargo: "Desarrollador en formación",
-    ciudad: "Valledupar, Colombia",
-    contacto: "jesus@example.com"
+    ciudad: "Medellin, Colombia",
+    contacto: "mailethbegambre615@gmail.com"
   };
 
   const perfilTexto = `
@@ -95,8 +95,8 @@ export default function App() {
     { id: 1, nombre: "React", tipo: "frontend" },
     { id: 2, nombre: "JavaScript", tipo: "frontend" },
     { id: 3, nombre: "Node.js", tipo: "backend" },
-    { id: 4, nombre: "MySQL", tipo: "base" },
-    { id: 5, nombre: "Git", tipo: "otros" }
+    { id: 4, nombre: "MySQL", tipo: "base de datos" },
+    { id: 5, nombre: "Git", tipo: "otros" },
   ];
 
   return (

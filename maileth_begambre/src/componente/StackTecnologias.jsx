@@ -1,13 +1,6 @@
 import React from "react";
 
-export default function StackTecnologias() {
-  const tecnologias = [
-    { id: 1, nombre: "React", tipo: "frontend" },
-    { id: 2, nombre: "JavaScript", tipo: "frontend" },
-    { id: 3, nombre: "Node.js", tipo: "backend" },
-    { id: 4, nombre: "MySQL", tipo: "base de datos" },
-    { id: 5, nombre: "Git", tipo: "otros" },
-  ];
+export default function StackTecnologias({ tecnologias }) {
 
   // Renderizado condicional: si no hay tecnologías
   if (tecnologias.length === 0) {
