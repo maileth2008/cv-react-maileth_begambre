@@ -3,7 +3,11 @@ import CabeceraCV from "./componente/CabeceraCV.jsx";
 import Perfil from "./componente/Perfil.jsx";
 import Educacion from "./componente/Educacion.jsx";
 import Experiencia from "./componente/Experiencia.jsx";
-import StackTecnologias from "./componente/StackTecnologias.jsx";
+import StackTecnologias from "./componente/StackTecnologias";
+import "./App.css";
+
+
+
 
 export default function App() {
 
@@ -91,14 +95,15 @@ export default function App() {
     {titulo: "Inglés Básico", institucion: "SENA",año: "2025" }
    
   ];
-
   const tecnologias = [
     { id: 1, nombre: "React", tipo: "frontend" },
-    { id: 2, nombre: "JavaScript", tipo: "frontend" },
-    { id: 3, nombre: "Node.js", tipo: "backend" },
-    { id: 4, nombre: "MySQL", tipo: "base de datos" },
-    { id: 5, nombre: "Git", tipo: "otros" },
+    { id: 2, nombre: "Node.js", tipo: "backend" },
+    { id: 3, nombre: "PostgreSQL", tipo: "base de datos" },
+    { id: 4, nombre: "Docker", tipo: "otros" },
   ];
+
+
+
 
   return (
     <div className="cv-container">
@@ -106,12 +111,13 @@ export default function App() {
 
       <Perfil descripcion={perfilTexto} />
 
-      <educacion cursos={cursos} />
+      <Educacion cursos={cursos} />
 
-      <experiencia experiencias={experiencias} />
+      <Experiencia Experiencias={experiencias} />
+       <StackTecnologias tecnologias={tecnologias} />
 
-      <StackTecnologias tecnologias={tecnologias} />
-    </div>
+       </div>
+    
   );
 }
 

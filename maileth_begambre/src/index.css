@@ -2,45 +2,45 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* evita desbordes de cajas */
-  font-family: Arial, sans-serif; /* fuente general */
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 /* FONDO DE LA PÁGINA */
 body {
-  background: #f5f1e6; /* beige suave estilo hoja */
-  display: flex; /* activamos flexbox */
-  justify-content: center; /* centramos horizontalmente */
-  align-items: flex-start; /* alineación arriba */
-  min-height: 100vh; /* alto mínimo: toda la pantalla */
-  padding: 40px; /* espacio entre hoja y borde */
+  background: #f0dfcd; /* pastel rosa suave */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px;
 }
 
 /* CONTENEDOR PRINCIPAL DEL CV */
 .cv-container {
-  width: 900px; /* ancho tipo hoja A4 */
-  background: #ffffff; /* fondo blanco (hoja) */
-  padding: 50px; /* espacio interno */
-  border-radius: 12px; /* esquinas redondeadas */
-  border: 1px solid #d1c9c0; /* borde sutil */
-  box-shadow: 0 0 20px rgba(0,0,0,0.15); /* sombra para elevar la hoja */
+  width: 900px;
+  background: #f5baed34; /* pastel azul */
+  padding: 50px;
+  border-radius: 12px;
+  border: 1px solid #d1c9c0;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
 }
 
 /* CABECERA */
 header {
-  text-align: center; /* todo centrado */
-  margin-bottom: 30px; /* separación con el contenido */
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 /* ESTILO GENERAL DEL NOMBRE */
 h1 {
-  font-size: 3rem; /* tamaño grande */
-  font-weight: bold; /* negrita */
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 /* PARTE ROSA DEL NOMBRE */
 .rosa {
-  color: #f38cb8; /* rosado pastel */
+  color: #e91515;
 }
 
 /* PARTE NEGRA DEL NOMBRE */
@@ -50,39 +50,39 @@ h1 {
 
 /* ESTILOS ADICIONALES DE HEADER */
 header h1 {
-  font-size: 32px; /* ajuste tamaño */
+  font-size: 32px;
   font-weight: bold;
-  color: #333; /* gris oscuro elegante */
+  color: #9e6262;
 }
 
 header h2 {
   font-size: 18px;
-  color: #777; /* gris claro */
+  color: #8a4d4d;  /* gris suave */
 }
 
 header p {
   font-size: 14px;
-  color: #555; /* texto de contacto */
+  color: #5e0606;
 }
 
-/* SECCIONES GENERALES (Perfil, Educación, Experiencia) */
+/* SECCIONES GENERALES */
 section {
-  margin-bottom: 30px; /* separación entre secciones */
+  margin-bottom: 30px;
 }
 
 /* TÍTULOS DE LAS SECCIONES */
 section h2 {
-  font-size: 22px; /* más grande que el texto */
+  font-size: 22px;
   margin-bottom: 10px;
-  border-left: 5px solid #e96cd7; /* barra rosada decorativa */
-  padding-left: 8px; /* separa el texto de la barra */
-  color: #333;
+  border-left: 5px solid #c55c2bfa; /* verde pastel */
+  padding-left: 8px;
+  color: #75111186;
 }
 
-/* TEXTO GENERAL DE LAS SECCIONES */
+/* TEXTO GENERAL */
 section p,
 section h3 {
   margin-top: 5px;
   font-size: 15px;
-  color: #444; /* gris suave */
+  color: #664f1e;
 }
