@@ -7,10 +7,8 @@
   margin-bottom: 8px;
   display: inline-block;
 }
-
-/* Pastel Azul (frontend) */
 .stack-frontend {
-  background: #AEC6FF;   /* azul pastel */
+  background: #AEC6FF;   
   color: #1a1a1a;
 }
 
