@@ -1,4 +1,4 @@
-import { useState } from "react";  
+import { useState } from "react";
 
 export default function StackTecnologias({ tecnologias, setTecnologias }) {
 
@@ -11,22 +11,21 @@ export default function StackTecnologias({ tecnologias, setTecnologias }) {
     );
   }
 
-  const obtenerColor = (tipo) => {
+  const obtenerColorClase = (tipo) => {
     switch (tipo) {
       case "frontend":
-        return "blue";
+        return "color-frontend";
       case "backend":
-        return "green";
+        return "color-backend";
       case "base de datos":
-        return "orange";
+        return "color-bd";
       case "otros":
-        return "purple";
+        return "color-otros";
       default:
-        return "gray";
+        return "color-default";
     }
   };
 
-  //  NUEVO: función para eliminar
   const eliminarTecnologia = (id) => {
     const nuevas = tecnologias.filter((tech) => tech.id !== id);
     setTecnologias(nuevas);
@@ -40,22 +39,13 @@ export default function StackTecnologias({ tecnologias, setTecnologias }) {
         {tecnologias.map((tech) => (
           <li
             key={tech.id}
-            style={{ color: obtenerColor(tech.tipo), fontWeight: "bold" }}
+            className={`item-tecnologia ${obtenerColorClase(tech.tipo)}`}
           >
             {tech.nombre} — <em>{tech.tipo}</em>
 
-            {/* NUEVO: botón eliminar */}
             <button
+              className="btn-eliminar"
               onClick={() => eliminarTecnologia(tech.id)}
-              style={{
-                marginLeft: "10px",
-                padding: "2px 6px",
-                cursor: "pointer",
-                backgroundColor: "red",
-                color: "white",
-                border: "none",
-                borderRadius: "5px"
-              }}
             >
               X
             </button>

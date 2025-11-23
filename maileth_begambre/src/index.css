@@ -38,9 +38,9 @@ h1 {
   font-weight: bold;
 }
 
-/* PARTE ROSA DEL NOMBRE */
+
 .rosa {
-  color: #e91515;
+  color: #ef3333;
 }
 
 /* PARTE NEGRA DEL NOMBRE */
@@ -74,7 +74,7 @@ section {
 section h2 {
   font-size: 22px;
   margin-bottom: 10px;
-  border-left: 5px solid #c55c2bfa; /* verde pastel */
+  border-left: 5px solid #b13d07fa; 
   padding-left: 8px;
   color: #75111186;
 }
@@ -86,3 +86,55 @@ section h3 {
   font-size: 15px;
   color: #664f1e;
 }
+/* Colores según tipo */
+.color-frontend {
+  color: blue;
+  font-weight: bold;
+}
+
+.color-backend {
+  color: green;
+  font-weight: bold;
+}
+
+.color-bd {
+  color: orange;
+  font-weight: bold;
+}
+
+.color-otros {
+  color: purple;
+  font-weight: bold;
+}
+
+.color-default {
+  color: gray;
+  font-weight: bold;
+}
+
+/* Estilo general del ítem */
+.item-tecnologia {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  list-style: none;
+}
+
+/* Botón eliminar */
+.btn-eliminar {
+  margin-left: 10px;
+  padding: 4px 8px;
+  cursor: pointer;
+  background-color: rgb(191, 95, 95);
+  color: rgb(26, 23, 23);
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-eliminar:hover {
+  background-color: rgb(206, 118, 118);
+}
+
+

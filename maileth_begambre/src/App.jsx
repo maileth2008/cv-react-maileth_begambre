@@ -1,4 +1,5 @@
 
+import { useState } from "react";
 import { datosIniciales } from "./cvData";
 
 import CabeceraCV from "./componente/CabeceraCV.jsx";
@@ -10,11 +11,12 @@ import ToggleHabilidades from "./componente/ToggleHabilidades.jsx";
 import FormularioTecnologia from "./componente/FormularioTecnologia.jsx";
 import Proyectos from "./componente/Proyectos.jsx";
 
-
 import "./index.css";
 
 export default function App() {
-  const [tecnologias, setTecnologias] = useState(datosIniciales.tecnologiasIniciales);
+  const [tecnologias, setTecnologias] = useState(
+    datosIniciales.tecnologiasIniciales
+  );
 
   const agregarTecnologia = (nueva) => {
     setTecnologias([...tecnologias, nueva]);
@@ -34,14 +36,12 @@ export default function App() {
 
       <FormularioTecnologia agregarTecnologia={agregarTecnologia} />
 
-     <StackTecnologias 
-  tecnologias={tecnologias} 
-  setTecnologias={setTecnologias}
-/>
-
+      <StackTecnologias
+        tecnologias={tecnologias}
+        setTecnologias={setTecnologias}
+      />
 
       <Proyectos proyectos={datosIniciales.proyectos} />
-
     </div>
   );
 }
