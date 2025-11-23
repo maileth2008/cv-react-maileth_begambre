@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import { datosIniciales } from "./cvData";
 
 import CabeceraCV from "./componente/CabeceraCV.jsx";
@@ -34,7 +34,11 @@ export default function App() {
 
       <FormularioTecnologia agregarTecnologia={agregarTecnologia} />
 
-      <StackTecnologias tecnologias={tecnologias} />
+     <StackTecnologias 
+  tecnologias={tecnologias} 
+  setTecnologias={setTecnologias}
+/>
+
 
       <Proyectos proyectos={datosIniciales.proyectos} />
 

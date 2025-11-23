@@ -1,9 +1,7 @@
-import React from "react";
+import { useState } from "react";  
 
-export default function StackTecnologias({ tecnologias }) {
+export default function StackTecnologias({ tecnologias, setTecnologias }) {
 
-  
-  // Renderizado condicional: si no hay tecnologías
   if (tecnologias.length === 0) {
     return (
       <section>
@@ -13,7 +11,6 @@ export default function StackTecnologias({ tecnologias }) {
     );
   }
 
-  // Asigna color según el tipo
   const obtenerColor = (tipo) => {
     switch (tipo) {
       case "frontend":
@@ -29,6 +26,12 @@ export default function StackTecnologias({ tecnologias }) {
     }
   };
 
+  //  NUEVO: función para eliminar
+  const eliminarTecnologia = (id) => {
+    const nuevas = tecnologias.filter((tech) => tech.id !== id);
+    setTecnologias(nuevas);
+  };
+
   return (
     <section>
       <h3>Stack de Tecnologías</h3>
@@ -40,6 +43,22 @@ export default function StackTecnologias({ tecnologias }) {
             style={{ color: obtenerColor(tech.tipo), fontWeight: "bold" }}
           >
             {tech.nombre} — <em>{tech.tipo}</em>
+
+            {/* NUEVO: botón eliminar */}
+            <button
+              onClick={() => eliminarTecnologia(tech.id)}
+              style={{
+                marginLeft: "10px",
+                padding: "2px 6px",
+                cursor: "pointer",
+                backgroundColor: "red",
+                color: "white",
+                border: "none",
+                borderRadius: "5px"
+              }}
+            >
+              X
+            </button>
           </li>
         ))}
       </ul>
