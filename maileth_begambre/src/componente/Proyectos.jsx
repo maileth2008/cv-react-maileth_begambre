@@ -1,16 +1,17 @@
 export default function Proyectos({ proyectos }) {
   return (
-    <section className="proyectos">
+    <section className="proyectos-section">
       <h3>Proyectos</h3>
 
-      <ul>
+      <div className="lista-proyectos">
         {proyectos.map((proyecto, index) => (
-          <li key={index}>
-            <h4>{proyecto.nombre} ({proyecto.año})</h4>
+          <article key={index} className="proyecto-card">
+            <h4>{proyecto.nombre} <span>({proyecto.año})</span></h4>
             <p>{proyecto.descripcion}</p>
-          </li>
+          </article>
         ))}
-      </ul>
+      </div>
     </section>
   );
 }
+

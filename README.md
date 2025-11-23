@@ -186,3 +186,89 @@ experiencia mapeada desde arreglo en app.js
 componente educacion con props y destructuracion 
 estacktecnologia ahora recive props desde app.js
 actualización del README con explicación del uso de props
+
+
+CV React Interactivo – Maileth Begambre
+
+Este proyecto corresponde a la actividad del SENA donde se integran eventos y estado local (useState) en un CV desarrollado con React + Vite.
+
+ Funcionalidades nuevas incorporadas
+ 1. ToggleHabilidades
+
+Muestra u oculta las habilidades con un botón.
+
+Implementa: useState + renderizado condicional.
+
+ 2. FormularioTecnologia
+
+Permite agregar una tecnología al stack desde un formulario controlado.
+
+Implementa: useState, onChange, onSubmit, funciones callback.
+
+ 3. Tecnologías dinámicas
+
+Se almacenan en el estado del componente App.jsx.
+
+Se pueden agregar y eliminar dinámicamente.
+
+ Tecnologías utilizadas
+
+React
+
+Vite
+
+JavaScript moderno
+
+JSX
+
+Hooks (useState)
+
+ Cómo ejecutar el proyecto
+npm install
+npm run dev
+
+Capturas de pantalla
+
+
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+![alt text](image-5.png)
+
+![alt text](image-6.png)
+
+
+ Preguntas de Autoevaluación:
+ 
+ ¿Qué ventaja ofrece mantener el estado en App.jsx?
+
+Permite que los componentes compartan datos mediante props, centralizando el flujo de información.
+
+ ¿Cómo evitaste que el formulario recargara la página?
+
+Usando event.preventDefault() dentro del onSubmit.
+
+ ¿Por qué usar setTecnologias([...prev, nueva]) y no push()?
+
+push() no actualiza el estado porque muta el arreglo original.
+setTecnologias([...prev, nueva]) crea un nuevo arreglo, lo que React sí detecta.
+
+ ¿Cómo adaptarías FormularioTecnologia a idiomas o proyectos?
+
+Cambiando los inputs y la estructura del objeto enviado al componente padre.
+
+ ¿Qué pasa si el estado estuviera directamente en el componente hijo?
+
+No se podría compartir entre otros componentes y App perdería el control del estado global
+
+nuevos committs:
+
+1 organización inicial del proyecto para integración de eventos
+2 creación de componente ToggleHabilidades con renderizado condicional
+3 implementación de useState para mostrar/ocultar habilidades
+4  creación de componente FormularioTecnologia con inputs controlados
+5 función agregarTecnologia en App.jsx y paso como prop
+6 renderizado dinámico de tecnologías desde estado
+7 actualización del README con descripción de eventos y estados

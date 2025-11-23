@@ -136,5 +136,38 @@ section h3 {
 .btn-eliminar:hover {
   background-color: rgb(206, 118, 118);
 }
+/*estilizar con  tarjetas la parte de proyectos*/
 
+.proyectos-section {
+  margin-top: 25px;
+}
+
+.lista-proyectos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.proyecto-card {
+  background: #ffffff50;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border-left: 4px solid #444;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.proyecto-card h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.proyecto-card span {
+  font-weight: normal;
+  color: #555;
+}
+
+.proyecto-card p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
 
