@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Habilidades from "./Habilidades";
+import Habilidades from "./Habilidades.jsx";
 
 export default function ToggleHabilidades({ habilidades }) {
   const [visible, setVisible] = useState(false);

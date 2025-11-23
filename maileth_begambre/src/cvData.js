@@ -39,5 +39,25 @@ export const datosIniciales = {
     { id: 4, nombre: "Docker", tipo: "otros" },
   ],
 
-  habilidades: ["Trabajo en equipo", "Creatividad", "Responsabilidad", "Comunicación", "Aprendizaje rápido"]
+  proyectos: [
+  {
+    nombre: "Landing Page Personal",
+    año: "2024",
+    descripcion: "Diseño y desarrollo de una landing page básica con HTML, CSS y JavaScript."
+  },
+  {
+    nombre: "Aplicación React - CV Modular",
+    año: "2025",
+    descripcion: "Construcción de un currículum dinámico usando componentes y estados."
+  },
+  {
+    nombre: "API en JSON",
+    año: "2025",
+    descripcion: "Creación de una API simple para enviar y recibir datos."
+  }
+],
+habilidades: ["Trabajo en equipo", "Creatividad", "Responsabilidad", "Comunicación", "Aprendizaje rápido"]
+
 };
+
+
